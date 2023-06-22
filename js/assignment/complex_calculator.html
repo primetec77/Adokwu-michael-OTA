@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div>
+          <h1 style="color: blue;">Dynamic calculator</h1>
+        </div>
+        <div class="calculator">
+          <div>
+            <input type="text" id="result" class="form-control" style="width: 50%;">
+          </div>
+          <div class="mt-3">
+            <input type="button" name="one" value="1" onclick="display('1')" style="font-size: 35px;">
+            <input type="button" name="two" value="2" onclick="display('2')" style="font-size: 35px;">
+            <input type="button" name="three" value="3" onclick="display('3')" style="font-size: 35px;">
+            <input type="button" name="plus" value="+" onclick="display('+')" style="font-size: 35px;">
+          </div>
+          <div class="mt-3">
+            <input type="button" name="four" value="4" onclick="display('4')" style="font-size: 35px;">
+            <input type="button" name="five" value="5" onclick="display('5')" style="font-size: 35px;">
+            <input type="button" name="six" value="6" onclick="display('6')" style="font-size: 35px;">
+            <input type="button" name="minus" value="-" onclick="display('-')" style="font-size: 35px;">
+          </div>
+          <div class="mt-3">
+            <input type="button" name="seven" value="7" onclick="display('7')" style="font-size: 35px;">
+            <input type="button" name="eight" value="8" onclick="display('8')" style="font-size: 35px;">
+            <input type="button" name="nine" value="9" onclick="display('9')" style="font-size: 35px;">
+            <input type="button" name="multiplication" value="*" onclick="display('*')" style="font-size: 35px;">
+          </div>
+          <div class="mt-3">
+            <input type="button" name="clear" value="clr" onclick="clearScreen()" style="font-size: 35px;">
+            <input type="button" name="zero" value="0" onclick="display('0')" style="font-size: 35px;">
+            <input type="button" name="equal" value="=" onclick="calculate()" style="font-size: 35px;">
+            <input type="button" name="division" value="/" onclick="display('/')" style="font-size: 35px;">
+          </div>
+          <div>
+            <input type="button" name="modulo" value="%" onclick="display('%')" style="font-size: 35px;">
+            <input type="button" name="dot" value="." onclick="display('.')" style="font-size: 35px;">
+            <input type="button" name="doublezero" value="00" onclick="display('00')" style="font-size: 35px;">
+            <input type="button" name="square" value="000" onclick="display('000')" style="font-size: 35px;">
+          </div>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+  <script src="complex_calculator.js"></script>
+</body>
+</html>

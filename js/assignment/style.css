@@ -1,0 +1,13 @@
+input[type=button] {  
+    width: 75px;  
+    height: 60px;
+    box-sizing: border-box;  
+    background: #ecedef;  
+    border: none;   
+    line-height: 30px;  
+    border-radius: 50%;  
+    font-weight: 700;  
+    color: #5E5858;  
+    cursor: pointer;    
+  }  
+  

@@ -1,0 +1,35 @@
+.container{
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 19) opx 10px 20px, rgba(0, 0, 0, 22) opx 6px 6px;
+}
+.display-box{
+    font-family: sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+#btn{
+    background-color: #fb0066;
+}
+input[type=btton] {
+    font-family: sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    height: 70%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+input:active[type=button] {
+    background: #e5e5e5;
+    
+}
