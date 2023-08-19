@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="container">
+        <div class="mt-5">
+            <h3>Getting information from an API</h3>
+        </div>
+        <div class="mt-3">
+            <button id="getbtn" class="btn btn-primary">Get</button>
+        </div>
+    </div>
+    <script>
+        var getBtn = document.getElementById("getbtn");
+        var getData = () => {
+        fetch('https://reqres.in/api/users')
+        .then(data => {return data.json()})
+        .then(dataResponse => {console.log(dataResponse)})
+    }
+    getBtn.addEventListener('click', getData)
+    </script>
+ </body>
+ </html>

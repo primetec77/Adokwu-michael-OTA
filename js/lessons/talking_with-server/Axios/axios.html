@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h2>API</h2>
+    <button id="getbtn">Get</button>
+    <button id="postbtn">Post</button>
+    <button id="putbtn">Put</button>
+    <button id="deletebtn">delete</button>
+    <script>
+        var getBtn = document.getElementById("getbtn");
+
+        var getData = () => {
+            axios.get('https://reqres.in/api/users')
+            .then(data => console.log(data))
+            .catch(error => console.log(error))
+        }
+        getBtn.addEventListener('click', getData);
+
+        var postBtn = document.getElementById("postbtn");
+        var postData = () => {
+            axios.post('https://reqres.in/api/user', {name:"Michael", job:"software tester"})
+            .then(data => console.log(data))
+            .catch(error => console.log(error))
+
+        }
+
+
+        
+        // Assignment
+// put request
+        var putBtn = document.getElementById("putbtn");
+        var putData =() =>{
+            axios.put('https://reqres.in/api/users/3', {name:"Michael Adiga", job:"developer"})
+            .then(data => console.log(data))
+            .catch(error => console.log(error))
+        }
+        putBtn.addEventListener('click', putData)
+// delete request 
+        var deleteBtn = document.getElementById("deletebtn");
+        var deleteData =() =>{
+            axios.delete('https://reqres.in/api/users/3')
+            .then(data => console.log(data))
+            .catch(error => console.log(error))
+        }
+        deleteBtn.addEventListener('click', deleteData)
+
+    </script>
+</body>
+</html>
